@@ -1,0 +1,31 @@
+{
+  "name": "Hello World!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.nytimes.com/*"],
+      "css": ["content/content-styles.css"],
+      "js": ["content/content-script.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+     "16": "/icon/crx_icon_16.png",
+      "32": "/icon/crx_icon_32.png",
+      "48": "/icon/crx_icon_48.png",
+      "128": "/icon/crx_icon_128.png"
+    }
+  },
+  "icons": {
+    "16": "/icon/crx_icon_16.png",
+    "32": "/icon/crx_icon_32.png",
+    "48": "/icon/crx_icon_48.png",
+    "128": "/icon/crx_icon_128.png"
+  },
+  "options_page": "options/options.html"
+}
