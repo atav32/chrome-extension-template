@@ -27,5 +27,8 @@
     "48": "/icon/crx_icon_48.png",
     "128": "/icon/crx_icon_128.png"
   },
+  "permissions": [
+    "background"
+  ],
   "options_page": "options/options.html"
 }
