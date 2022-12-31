@@ -8,8 +8,8 @@
   "content_scripts": [
     {
       "matches": ["https://*.nytimes.com/*"],
-      "css": ["content/content-styles.css"],
-      "js": ["content/content-script.js"]
+      "css": ["content/content.css"],
+      "js": ["content/content.js"]
     }
   ],
   "action": {
@@ -28,7 +28,9 @@
     "128": "/icon/crx_icon_128.png"
   },
   "permissions": [
-    "background"
+    "activeTab",
+    "background",
+    "storage"
   ],
   "options_page": "options/options.html"
 }
