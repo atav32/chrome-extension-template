@@ -5,13 +5,6 @@
   "background": {
     "service_worker": "background/background.js"
   },
-  "content_scripts": [
-    {
-      "matches": ["https://*.nytimes.com/*"],
-      "css": ["content/content.css"],
-      "js": ["content/content.js"]
-    }
-  ],
   "action": {
     "default_popup": "popup/popup.html",
     "default_icon": {
@@ -29,8 +22,10 @@
   },
   "permissions": [
     "activeTab",
+    "downloads",
     "background",
-    "storage"
+    "storage",
+    "tabs"
   ],
   "options_page": "options/options.html"
 }
